@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   Bài 4: Cho mảng sau:
+    //   let arr=[1,2,3,4,5,6,7,8,9,10]
+    //   Viết hàm trả về tất cả các cặp số có tổng bằng 10
+
+            function sum10(array) {
+                let arr1 = [];
+                for (let i = 0; i < array.length; i++) {
+                    for (let j = i + 1 ; j < array.length; j++) {
+                        if (array[i] + array[j] == 10) {
+                            arr1.push([array[i], array[j]])
+                        }
+                    }
+                }
+                console.log('Cặp số có tổng bằng 10 là:', arr1);
+            }
+            
+            let array=[1,2,3,4,5,6,7,8,9,10];
+            sum10(array);
+          
+            
+    </script>
+  </body>
+</html>
